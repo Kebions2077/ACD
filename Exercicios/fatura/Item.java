@@ -4,9 +4,10 @@ import java.util.Scanner;
 
 public class Item{
 
-    public String nome;
-    public float preço;
-    public int qnt,id;
+    private int id;
+    private String nome;
+    private float preço;
+    private int qnt;
 
     public Item(){
          this.id=0;
@@ -15,6 +16,7 @@ public class Item{
          this.qnt=0;
     }
     void adicionar(){
+
         Scanner scan= new Scanner(System.in);
 
         System.out.println("Digite o ID do item:");
@@ -30,5 +32,9 @@ public class Item{
         this.preço = scan.nextFloat();
     }
 
+    public int getId(){return id;}
+    public String getNome{return nome;}
+    public float getPreço{return preço;}
+    public int getQnt{ return qnt;}
 
 }
