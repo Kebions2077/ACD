@@ -1,4 +1,4 @@
-public enum Especicaçao{
+public enum Especificaçao{
     DUPLO,
     COMPACTO,
     REMASTERIZADO
