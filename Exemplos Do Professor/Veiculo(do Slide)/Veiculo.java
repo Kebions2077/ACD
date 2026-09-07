@@ -1,9 +1,18 @@
 public class Veiculo{
-    int velocidade,vel_max=120;
-    boolean estado = false;
+    private int velocidade,vel_max=120;
+    private boolean estado = false;
+
+    public Veiculo(int velocidade,int vel_max,boolean estado){
+        this.velocidade=velocidade;
+        this.vel_max=vel_max;
+        this.estado=estado;
+    }
+    public int getVelocidade(){return velocidade;}
+    public int getVel_max(){return vel_max;}
+    public boolean getEstado(){return estado;}
 
     void status(){
-        if(estado !=false){
+        if(this.estado !=false){
             System.out.println("O Motor está ligado");
         }
         else {
@@ -11,32 +20,32 @@ public class Veiculo{
         }
     }
     void parar(){
-        if (estado !=false){
+        if (this.estado !=false){
             System.out.println("Desligando Motor..");
-            estado=false;
+            this.estado=false;
         }
         else {
             System.out.println("O Motor ja está Desligado");
         }
     }
     void ligar(){
-        if (estado !=true){
+        if (this.estado !=true){
             System.out.println("Ligando Motor..");
-            estado= true;
+            this.estado= true;
         }
         else {
             System.out.println("O Motor ja esta ligado");
         }
     }
     void acelerar_max(){
-        if(estado == false){
+        if(this.estado == false){
             System.out.println("O motor esta desligado, impossivel acelerar");
         }
-        else if(velocidade == vel_max){
+        else if(this.velocidade == this.vel_max){
             System.out.println("Ja esta na velocidade maxima");
         }
         else{
-            velocidade=vel_max;
+            this.velocidade=this.vel_max;
             System.out.println("Acelerando ate velocidade maxima");
         }
 
