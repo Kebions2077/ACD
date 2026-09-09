@@ -1,5 +1,6 @@
 public class Welcome1{
-    public static void main(String[] args){
+
+        void say_hello(){
         System.out.println("---------------------------------");
         System.out.println("Welcome To Java Programming!");
         System.out.println("---------------------------------");
