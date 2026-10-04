@@ -50,62 +50,62 @@ public class Main {
 
                 case 1:
                     System.out.println("----------MergeSort----------");
-                    Merge merge = new Merge(copia);
-                    merge.ordenar();
+                    Merge merge = new Merge();
+                    merge.ordenar(copia);
                     break;
 
                 case 2:
                     System.out.println("QuickSort");
-                    Quick quick = new Quick(copia);
-                    quick.ordenar();
+                    Quick quick = new Quick();
+                    quick.ordenar(copia);
                     break;
 
                 case 3:
                     System.out.println("HeapSort");
-                    Heap heap = new Heap(copia);
-                    heap.ordenar();
+                    Heap heap = new Heap();
+                    heap.ordenar(copia);
                     break;
 
                 case 4:
                     System.out.println("Counting");
-                    Counting counting = new Counting(copia);
-                    counting.ordenar();
+                    Counting counting = new Counting();
+                    counting.ordenar(copia);
                     break;
 
                 case 5:
                     System.out.println("Radix");
-                    Radix radix = new Radix(copia);
-                    radix.ordenar();
+                    Radix radix = new Radix();
+                    radix.ordenar(copia);
                     break;
 
                 case 6:
                     System.out.println("BucketSort");
-                    Bucket bucket = new Bucket(copia);
-                    bucket.ordenar();
+                    Bucket bucket = new Bucket();
+                    bucket.ordenar(copia);
                     break;
 
                 case 7:
                     System.out.println("Bubblesort");
-                    Bubble bubble = new Bubble(copia);
-                    bubble.ordenar();
+                    Bubble bubble = new Bubble();
+                    bubble.ordenar(copia);
                     break;
 
                 case 8:
                     System.out.println("Insertion");
-                    Insertion insertion = new Insertion(copia);
-                    insertion.ordenar();
+                    Insertion insertion = new Insertion();
+                    insertion.ordenar(copia);
                     break;
 
                 case 9:
                     System.out.println("Selection");
-                    Selection selection = new Selection(copia);
-                    selection.ordenar();
+                    Selection selection = new Selection();
+                    selection.ordenar(copia);
                     break;
 
                 case 10:
                     System.out.println("Shell");
-                    Shell shell = new Shell(copia);
-                    shell.ordenar();
+                    Shell shell = new Shell();
+                    shell.ordenar(copia);
                     break;
 
                 default:
