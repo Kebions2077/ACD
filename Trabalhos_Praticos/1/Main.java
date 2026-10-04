@@ -15,7 +15,7 @@ public class Main {
         Integer[] vetor = new Integer[tam];
 
         for (int x = 0; x < vetor.length; x++) {
-            vetor[x] = rand.nextInt(1000);
+            vetor[x] = rand.nextInt(100000);
         }
 
         int op = -1;
