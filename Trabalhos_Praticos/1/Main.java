@@ -34,7 +34,7 @@ public class Main {
             System.out.println("9)Selection");
             System.out.println("10) Shell");
             System.out.println("-----------------------------------------------");
-            System.out.println("Digite o Algoritmo para realizar a ordenaçao:");
+            System.out.println("Digite o Algoritmo para realizar ordenaçao:");
             System.out.println("-----------------------------------------------");
             op = scan.nextInt();
 
