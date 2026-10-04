@@ -14,8 +14,36 @@ public class Main {
 
         Integer[] vetor = new Integer[tam];
 
-        for (int x = 0; x < vetor.length; x++) {
-            vetor[x] = rand.nextInt(100000);
+        System.out.println("-------------Ordem do vetor-------------");
+        System.out.println("1) Crescente");
+        System.out.println("2) Decrescente");
+        System.out.println("3) Aleatória");
+        System.out.println("----------------------------------------");
+        System.out.println("Digite a ordem:");
+        int ordem = scan.nextInt();
+
+        switch (ordem) {
+            case 1:
+                for (int i = 0; i < vetor.length; i++) {
+                    vetor[i] = i;
+                }
+                break;
+
+            case 2:
+                for (int i = 0; i < vetor.length; i++) {
+                    vetor[i] = vetor.length - i;
+                }
+                break;
+
+            case 3:
+                for (int i = 0; i < vetor.length; i++) {
+                    vetor[i] = rand.nextInt(100000);
+                }
+                break;
+
+            default:
+                System.out.println("Opção inválida");
+                return;
         }
 
         int op = -1;
@@ -121,3 +149,4 @@ public class Main {
         scan.close();
     }
 }
+
