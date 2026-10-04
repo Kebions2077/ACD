@@ -1,3 +1,4 @@
+//Criado por Kevin Meireles e Joao Rigo
 import java.util.Random;
 import java.util.Scanner;
 
