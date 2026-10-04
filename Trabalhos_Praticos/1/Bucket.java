@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Bucket {
-    public void ordenar(int[] arr) {
+    public void ordenar(Integer[] arr) {
         if (arr.length == 0) {
             return;
         }
