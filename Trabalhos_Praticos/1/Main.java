@@ -51,51 +51,61 @@ public class Main {
                 case 1:
                     System.out.println("----------MergeSort----------");
                     Merge merge = new Merge(copia);
+                    merge.ordenar();
                     break;
 
                 case 2:
                     System.out.println("QuickSort");
                     Quick quick = new Quick(copia);
+                    quick.ordenar();
                     break;
 
                 case 3:
                     System.out.println("HeapSort");
                     Heap heap = new Heap(copia);
+                    heap.ordenar();
                     break;
 
                 case 4:
                     System.out.println("Counting");
                     Counting counting = new Counting(copia);
+                    counting.ordenar();
                     break;
 
                 case 5:
                     System.out.println("Radix");
                     Radix radix = new Radix(copia);
+                    radix.ordenar();
                     break;
 
                 case 6:
                     System.out.println("BucketSort");
                     Bucket bucket = new Bucket(copia);
+                    bucket.ordenar();
                     break;
 
                 case 7:
                     System.out.println("Bubblesort");
                     Bubble bubble = new Bubble(copia);
+                    bubble.ordenar();
                     break;
 
                 case 8:
                     System.out.println("Insertion");
                     Insertion insertion = new Insertion(copia);
+                    insertion.ordenar();
                     break;
 
                 case 9:
                     System.out.println("Selection");
                     Selection selection = new Selection(copia);
+                    selection.ordenar();
                     break;
 
                 case 10:
                     System.out.println("Shell");
                     Shell shell = new Shell(copia);
+                    shell.ordenar();
                     break;
 
                 default:
